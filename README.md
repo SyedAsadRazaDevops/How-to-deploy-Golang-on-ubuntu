@@ -76,7 +76,6 @@ The preceding command will compile main.go to produce an executable titled main.
 
 # Creating systemd service
 Next, you will create a systemd unit file to keep your application running in the background even when you are not accessing your server.
-
 **First**, create a new file in **/lib/systemd/system** directory named **goweb.service** using **nano**.
 ```
 sudo nano /lib/systemd/system/goweb.service
@@ -104,7 +103,6 @@ systemctl enable hello_world.service
 ```
 In this **cheatsheet** you will find a collection of common commands used with the command line tools **systemctl**:
 ![systemd Cheat Sheet](https://user-images.githubusercontent.com/71556060/182783157-73de3da0-1065-497d-af3b-22e008363648.jpg)
-
 # Setting up a reverse proxy server
 I will use Nginx as a reverse proxy server, but you can choose any other one.
 Create a config in /etc/nginx/sites-available/hello_world file:
@@ -139,6 +137,5 @@ certbot --nginx
 ```
 # Final result
 Yep, that's it! Go to http://your_server_ip:6000 and see result 🎉
-
 If you want more articles like this on this blog, then post a comment below and subscribe to me. Thanks! 😘
 
