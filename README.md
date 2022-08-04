@@ -9,7 +9,7 @@ sudo add-apt-repository ppa:longsleep/golang-backports
 sudo apt update
 sudo apt install golang-go
 ```
-[https://stackoverflow.com/questions/17480044/how-to-install-the-current-version-of-go-in-ubuntu-precise]
+[stackoverflow.com how-to-install-the-current-version-of-go](https://stackoverflow.com/questions/17480044/how-to-install-the-current-version-of-go-in-ubuntu-precise)
 
 # Creating a Simple Program
 - **PROJECT #1 Example**
@@ -106,7 +106,7 @@ In this **cheatsheet** you will find a collection of common commands used with t
 ![systemd Cheat Sheet](https://user-images.githubusercontent.com/71556060/182783157-73de3da0-1065-497d-af3b-22e008363648.jpg)
 # Setting up a reverse proxy server
 I will use Nginx as a reverse proxy server, but you can choose any other one.
-Create a config in /etc/nginx/sites-available/hello_world file:
+Create a config in **/etc/nginx/sites-available/hello_world** file:
 ```
 server {
     listen 80 default_server;
@@ -124,7 +124,7 @@ server {
     }
 }
 ```
-Create a symbolic link of our config file to the sites-enabled folder:
+Create a **symbolic link** of our config file to the sites-enabled folder:
 ```
 ln -s /etc/nginx/sites-available/hello_world /etc/nginx/sites-enabled
 ```
@@ -132,11 +132,11 @@ reload nginx to apply config.
 ```
 nginx -t && nginx -s reload
 ```
-Finally, apply SSL certbot:
+Finally, apply **SSL** certbot:
 ```
 certbot --nginx
 ```
 # Final result
-Yep, that's it! Go to http://your_server_ip:9990 and see result 🎉
-If you want more articles like this on this blog, then post a comment below and subscribe to me. Thanks! 😘
+Yep, that's it! Go to **http://your_server_ip:9990** and see result 🎉
+If you want more articles like this on this blog, then post a **comment** below and **subscribe** to me. **Thanks!** 😘
 
