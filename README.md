@@ -13,6 +13,7 @@ sudo apt install golang-go
 
 # Creating a Simple Program
 - **PROJECT #1 Example**
+
 Now that you have the Go workspace set up, create a “Hello, World!” program.
 ```
 nano hello.go
