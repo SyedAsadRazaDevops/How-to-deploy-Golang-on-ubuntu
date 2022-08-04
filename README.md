@@ -115,7 +115,7 @@ server {
     server_name _;
 
     location /root/go/hello_world {
-            proxy_pass http://localhost:3000;
+            proxy_pass http://localhost:9990;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection 'upgrade';
@@ -137,6 +137,6 @@ Finally, apply SSL certbot:
 certbot --nginx
 ```
 # Final result
-Yep, that's it! Go to http://your_server_ip:6000 and see result 🎉
+Yep, that's it! Go to http://your_server_ip:9990 and see result 🎉
 If you want more articles like this on this blog, then post a comment below and subscribe to me. Thanks! 😘
 
