@@ -75,6 +75,22 @@ go build main.go
 ```
 The preceding command will compile main.go to produce an executable titled main.
 
+> ERROR  
+```
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [ERROR] listen tcp :8080: bind: address already in use
+```
+if you need to change the default-port you can change it in this fuction:
+
+```
+func main() {
+	r := setupRouter()
+	r.Run(":8080")
+}
+```
+
 # Creating systemd service
 Next, you will create a systemd unit file to keep your application running in the background even when you are not accessing your server.
 **First**, create a new file in **/lib/systemd/system** directory named **goweb.service** using **nano**.
@@ -136,7 +152,9 @@ Finally, apply **SSL** certbot:
 ```
 certbot --nginx
 ```
+
 # Final result
+
 Yep, that's it! Go to **http://your_server_ip:9990** and see result 🎉
 If you want more articles like this on this blog, then post a **comment** below and **subscribe** to me. **Thanks!** 😘
 
