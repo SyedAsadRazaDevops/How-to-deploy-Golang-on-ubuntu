@@ -129,7 +129,7 @@ server {
     listen [::]:80 default_server;
 
     server_name _;
-    #not need to define the location becuse it run on localhost but with spacific branch 	
+    #not need to define the location becuse it run on localhost but with spacific PORT 	
     location / {
             proxy_pass http://localhost:9990;
             proxy_http_version 1.1;
