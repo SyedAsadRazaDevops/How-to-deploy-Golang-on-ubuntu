@@ -113,8 +113,8 @@ server {
     listen [::]:80 default_server;
 
     server_name _;
-
-    location /root/go/hello_world {
+    #not need to define the location becuse it run on localhost but with spacific branch 	
+    location / {
             proxy_pass http://localhost:9990;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
