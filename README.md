@@ -8,6 +8,7 @@ For fetching the latest version:
 sudo add-apt-repository ppa:longsleep/golang-backports
 sudo apt update
 sudo apt install golang-go
+go version
 ```
 [stackoverflow.com how-to-install-the-current-version-of-go](https://stackoverflow.com/questions/17480044/how-to-install-the-current-version-of-go-in-ubuntu-precise)
 
