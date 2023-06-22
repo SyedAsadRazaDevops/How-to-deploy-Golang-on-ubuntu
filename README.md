@@ -119,6 +119,27 @@ systemctl daemon-reload
 systemctl start hello_world.service
 systemctl enable hello_world.service
 ```
+- **PROJECT #3 Example**
+
+```                  
+[Unit]
+Description= mongodbSyncGo
+After=multi-user.target
+
+[Service]
+User=root
+Group=root
+
+Restart=always
+RestartSec=5s
+
+WorkingDirectory=/home/syncgo/public_html/Go/
+ExecStart=/home/syncgo/public_html/Go/main
+
+[Install]
+WantedBy=multi-user.target
+```
+
 In this **cheatsheet** you will find a collection of common commands used with the command line tools **systemctl**:
 ![systemd Cheat Sheet](https://user-images.githubusercontent.com/71556060/182783157-73de3da0-1065-497d-af3b-22e008363648.jpg)
 # Setting up a reverse proxy server
