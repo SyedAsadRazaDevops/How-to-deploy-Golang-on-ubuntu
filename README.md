@@ -68,10 +68,12 @@ The preceding snippet starts the server and exposes your application via port 99
 
 return to your shell, run the program:
 ```
+go mod vendor
 go run hello.go
 ```
 Next, build the binary executable of your application by running:
 ```
+go mod vendor
 go build main.go
 ```
 The preceding command will compile main.go to produce an executable titled main.
